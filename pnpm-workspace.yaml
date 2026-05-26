@@ -1,6 +1,14 @@
-allowBuilds:
-  sharp: set this to true or false
-  unrs-resolver: set this to true or false
-ignoredBuiltDependencies:
+packages:
+  - "."
+strictDepBuilds: false
+onlyBuiltDependencies:
+  - msw
   - sharp
   - unrs-resolver
+allowBuilds:
+  '0': msw
+  '1': sharp
+  '2': unrs-resolver
+  msw: set this to true or false
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
